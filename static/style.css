@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --bg-color: #ffffff;
+  --artist-color: #96d1fc;
+  --title-color: #ffffff;
+  --artist-font: "Poppins", sans-serif;
+  --title-font: "Rubik", sans-serif;
+  --box-color: #131313;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 950px;
+  height: 150px;
+  background: var(--box-color);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 10px;
+  /* Glass Properties */
+  background-color: rgba(19, 19, 19, 0.79);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#box > #cover {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#box > #details {
+  display: flex;
+  flex-direction: column;
+}
+
+#artist-text {
+  color: var(--artist-color);
+  font-family: var(--artist-font);
+  margin-bottom: -30px;
+}
+
+#title-text {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  margin-bottom: 0;
+}

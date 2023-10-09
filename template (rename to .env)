@@ -1,4 +1,6 @@
 ID = '' # Spotify app id
 SECRET = '' # Spotify app secret
 REDIRECT = "https://google.com" # Spotify app redirect url
+# Delete the following lines for default settings (Recommended)
 MAX_ARTIST_LEN = 13 # Max length of an artist name to display (Optional) 
+MAX_NAME_LEN = 39 # Max length of an song name to display (Optional) 
