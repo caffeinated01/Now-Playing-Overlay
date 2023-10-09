@@ -10,7 +10,7 @@ SECRET = os.getenv("SECRET") # Get spotify app secret from .env file
 REDIRECT = os.getenv("REDIRECT") # Get spotify app redirect url from .env file
 SCOPE = "user-read-currently-playing" # Initialise scope
 # Get max length of an artist name to display from .env file. If it doesn't exist then defaults to 13 characters
-MAX_ARTIST_LEN = int(os.getenv("MAX_ARTIST_LEN")) if os.getenv("MAX_ARTIST_LEN") else 13 
+MAX_ARTIST_LEN = int(os.getenv("MAX_ARTIST_LEN")) if os.getenv("MAX_ARTIST_LEN") and os.getenv("MAX_ARTIST_LEN") != "" else 2
 
 # Initialise oauth
 oauth = spotipy.SpotifyOAuth(client_id=ID,
@@ -50,5 +50,3 @@ else:
         "cover": None,
         "artists": "Not playing"
     }
-
-print(current_details)

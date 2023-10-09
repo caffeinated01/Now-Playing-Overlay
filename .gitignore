@@ -6,3 +6,6 @@ sample.txt
 
 # Ignore .cache file
 .cache
+
+# Ignore __pycache__ directory
+__pycache__/
