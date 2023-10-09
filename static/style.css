@@ -27,7 +27,7 @@ body {
   gap: 20px;
   border-radius: 10px;
   /* Glass Properties */
-  background-color: rgba(19, 19, 19, 0.79);
+  background-color: rgba(19, 19, 19, 0.9);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
