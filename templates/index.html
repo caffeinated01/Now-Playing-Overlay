@@ -10,17 +10,33 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../static/main.js"></script>
+    <script>
+      $(function getData() {
+        $.getJSON("/ajax/fetch", function (data) {
+          $("#artist-text").text(data.song_artists);
+          $("#title-text").text(data.song_name);
+          $("#cover").attr("src", data.song_cover);
+        });
+        // $.getJSON("/ajax/map", function (data) {
+        //   $("#map_status").text(data.map_status);
+        //   $("#map_status").removeClass("loading");
+        //   $("#map_status").addClass(data.map_status_class);
+
+        //   if (data.map_status_class == "success") {
+        //     $("#map_preview_img").attr("src", "/static/map-preview.png");
+        //     $("#map_preview").attr("href", "https://map.diffusehyperion.me");
+        //   }
+        // });
+      });
+    </script>
     <title>Now Playing...</title>
   </head>
   <body>
     <div id="box">
       <img id="cover" src="../static/profile.png" />
       <div id="details">
-        <div id="artist-text"><h1>C418</h1></div>
-        <div id="title-text">
-          <h1>Dog</h1>
-        </div>
+        <h1 id="artist-text">Wait a second...</h1>
+        <h1 id="title-text">Wait a second...</h1>
       </div>
     </div>
   </body>

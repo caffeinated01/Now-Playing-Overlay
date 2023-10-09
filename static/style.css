@@ -31,6 +31,7 @@ body {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* outline: 3.5px solid #131313; */
 }
 
 #box > #cover {
@@ -50,7 +51,7 @@ body {
 #artist-text {
   color: var(--artist-color);
   font-family: var(--artist-font);
-  margin-bottom: -30px;
+  margin-bottom: -15px;
 }
 
 #title-text {
