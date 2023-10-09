@@ -1,4 +1,4 @@
 ID = '' # Spotify app id
-SECRET = '8bdf461fb8c14c8fa9f80c8e0a30d8d3' # Spotify app secret
+SECRET = '' # Spotify app secret
 REDIRECT = "https://google.com" # Spotify app redirect url
 MAX_ARTIST_LEN = 13 # Max length of an artist name to display (Optional) 
