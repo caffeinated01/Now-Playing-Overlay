@@ -17,16 +17,6 @@
           $("#title-text").text(data.song_name);
           $("#cover").attr("src", data.song_cover);
         });
-        // $.getJSON("/ajax/map", function (data) {
-        //   $("#map_status").text(data.map_status);
-        //   $("#map_status").removeClass("loading");
-        //   $("#map_status").addClass(data.map_status_class);
-
-        //   if (data.map_status_class == "success") {
-        //     $("#map_preview_img").attr("src", "/static/map-preview.png");
-        //     $("#map_preview").attr("href", "https://map.diffusehyperion.me");
-        //   }
-        // });
       });
     </script>
     <title>Now Playing...</title>
