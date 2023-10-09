@@ -1,0 +1,8 @@
+# Ignore .env file
+.env
+
+# Ignore sample.txt file
+sample.txt
+
+# Ignore .cache file
+.cache
