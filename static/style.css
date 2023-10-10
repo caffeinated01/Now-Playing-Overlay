@@ -25,11 +25,11 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* Glass Properties */
-  background-color: rgba(19, 19, 19, 0.9);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(19, 19, 19);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* outline: 3.5px solid #131313; */
 }
@@ -39,8 +39,8 @@ body {
   display: inline-block;
   width: 150px;
   height: 150px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
 }
 
 #box > #details {

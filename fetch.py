@@ -11,7 +11,7 @@ SECRET = os.getenv("SECRET") # Get spotify app secret from .env file
 REDIRECT = os.getenv("REDIRECT") # Get spotify app redirect url from .env file
 SCOPE = "user-read-currently-playing" # Initialise scope
 # Get max length of an artist name to display from .env file. If it doesn't exist then defaults to 13 characters
-MAX_ARTIST_LEN = int(os.getenv("MAX_ARTIST_LEN")) if os.getenv("MAX_ARTIST_LEN") and os.getenv("MAX_ARTIST_LEN") != "" else 20
+MAX_ARTIST_LEN = int(os.getenv("MAX_ARTIST_LEN")) if os.getenv("MAX_ARTIST_LEN") and os.getenv("MAX_ARTIST_LEN") != "" else 39
 # Get max length of an song name to display from .env file. If it doesn't exist then defaults to 39 characters
 MAX_NAME_LEN = int(os.getenv("MAX_NAME_LEN")) if os.getenv("MAX_NAME_LEN") and os.getenv("MAX_NAME_LEN") != "" else 39
 
