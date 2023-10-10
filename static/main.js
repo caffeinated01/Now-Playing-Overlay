@@ -1,4 +1,11 @@
+const INTERVAL = 5; // In seconds
+
 $(document).ready(function () {
+  $(function getCover() {
+    $.getJSON("/ajax/covers", function (data) {
+      $("#cover").attr("src", data.cover);
+    });
+  });
   function getData() {
     $.getJSON("/ajax/fetch", function (data) {
       $("#artist-text").text(data.song_artists);
@@ -8,5 +15,5 @@ $(document).ready(function () {
   }
   setInterval(function () {
     getData();
-  }, 5000); // Interval between check
+  }, INTERVAL * 1000); // Interval between check
 });
