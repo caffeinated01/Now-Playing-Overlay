@@ -5,11 +5,12 @@
 A small project that displays song currently playing
 
 #### How to use?
-
+Before you begin:
+Go to Spotify for developers and create your application and copy the client ID, secret somewhere.
 1. Click on 'Code' and download the zip file (of course unzip it)
    You could also use git, run `git clone "https://github.com/caffeinated01/Now-Playing-Overlay"`
    ![Alt text](assets/1.png)
-2. Right click on the folder, then press 'Open in Terminal' then run `pip install -r requirements.txt`
+2. Right click on the folder, then press 'Open in Terminal' then run `pip install -r requirements.txt` also, rename the template file to '.env' and replace the ID and secret values from earlier.
    ![Alt text](assets/2.png)
 3. Run the code - in the terminal, run `python app.py` then ctrl+click on the link (http://127.0.0.1:5000)
    ![Alt text](assets/3.png)
