@@ -15,8 +15,6 @@ for file in listdir(dir):
     default_covers.append(f'../static/default_covers/{file}')
   continue
 
-print(default_covers)
-
 @app.route('/')
 def index():
   return render_template('index.html')
