@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 950px;
+  min-width: 800px;
   height: 150px;
   background: var(--box-color);
   transform: translate(-50%, -50%);
@@ -30,7 +30,7 @@ body {
   background-color: rgba(19, 19, 19);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   /* outline: 3.5px solid #131313; */
 }
 
@@ -46,6 +46,7 @@ body {
 #box > #details {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 #artist-text {

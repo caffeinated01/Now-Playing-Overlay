@@ -21,11 +21,13 @@ oauth = spotipy.SpotifyOAuth(client_id=ID,
                              redirect_uri=REDIRECT,
                              scope=SCOPE)
 
-# Get token from spotify
-token = oauth.get_cached_token()["access_token"]
-spotify = spotipy.Spotify(auth=token)
+token = None
 
 def fetch():
+    # Get token
+    token = oauth.get_cached_token()["access_token"]
+    spotify = spotipy.Spotify(auth=token)
+    
     # Fetch details of song currently playing
     current = spotify.currently_playing()
     # current = json.loads(json.dumps(c, sort_keys=False, indent=4))

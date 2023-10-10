@@ -8,5 +8,5 @@ $(document).ready(function () {
   }
   setInterval(function () {
     getData();
-  }, 1000);
+  }, 5000); // Interval between check
 });
