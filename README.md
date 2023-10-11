@@ -36,5 +36,5 @@ Coming soon...
 
 #### TODO
 
-- [] Customisability for how overlay looks
-- [] Customisability for backend
+- [ ] Customisability for how overlay looks
+- [ ] Customisability for backend
