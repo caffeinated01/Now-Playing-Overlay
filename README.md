@@ -33,3 +33,8 @@ A small project that displays song currently playing
 #### How to configure?
 
 Coming soon...
+
+#### TODO
+
+- [] Customisability for how overlay looks
+- [] Customisability for backend
