@@ -1,16 +1,16 @@
 ## [WIP] Spotify Now-Playing Stream Overlay
 
-#### Table of contents
+### Table of contents
 1. [ Usage ](#usage)
 2. [ Configuration ](#configuration)
 3. [ TODO ](#todo)
 <a name="what"></a>
-#### What is this?
+### What is this?
 
 A small project that displays song currently playing
 
 <a name="usage"></a>
-#### How to use?
+### How to use?
 
 1. Go to https://developer.spotify.com/dashboard and create your application.
    ![Step 1](assets/1.1.png)
@@ -37,12 +37,12 @@ A small project that displays song currently playing
 7. All set! When you want to stop the program, go back to terminal and press CTRL+C. Note that the overlay only works when you are running it in the terminal.
 
 <a name="configuration"></a>
-#### How to configure?
+### How to configure?
 
 Coming soon...
 
 <a name="todo"></a>
-#### TODO
+### TODO
 
 - [ ] Customisability for how overlay looks
 - [ ] Customisability for backend
