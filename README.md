@@ -63,10 +63,12 @@ The configuration file is located at the root directory, named `config.json`. Op
 
 ```
 {
-  "MAX_ARTIST_LEN" : 13,
+  "MAX_ARTIST_LEN" : 20,
   "MAX_NAME_LEN" : 39,
   "ARTIST_COLOR": "#96d1fc",
-  "TITLE_COLOR": "ffffff"
+  "TITLE_COLOR": "#ffffff",
+  "BACKGROUND_COLOR": "#131313",
+  "WIDTH": 800
 }
 ```
 
@@ -76,7 +78,10 @@ The configuration file is located at the root directory, named `config.json`. Op
    - The max name length is the max length of a song's name that is displayed.
    - The artist color is the color of the artist's name that is displayed.
    - The title color is the color of the song's name that is displayed.
-   - Note that the colors **must be in hexadecimal**.
+     - Note that the colors **must be in hexadecimal**.
+   - The background color is the color of the overlay background displayed
+   - The width is the width of the overlay displayed
+     - Note that the width you enter in the config must correspond with the width for your browser source in streamlabs/obs
 
 2. Images to display when nothing is being played
    - Navigate to `./static/default_covers`
