@@ -1,15 +1,18 @@
 ## [WIP] Spotify Now-Playing Stream Overlay
 
 ### Table of contents
+
 1. [ Usage ](#usage)
 2. [ Configuration ](#configuration)
 3. [ TODO ](#todo)
-<a name="what"></a>
+   <a name="what"></a>
+
 ### What is this?
 
 A small project that displays song currently playing
 
 <a name="usage"></a>
+
 ### How to use?
 
 1. Go to https://developer.spotify.com/dashboard and create your application.
@@ -37,11 +40,34 @@ A small project that displays song currently playing
 7. All set! When you want to stop the program, go back to terminal and press CTRL+C. Note that the overlay only works when you are running it in the terminal.
 
 <a name="configuration"></a>
+
 ### How to configure?
 
-Coming soon...
+The configuration file is located at the root directory, named `config.json`. Open with any text editor and the default values are as such:
+
+```
+{
+  "MAX_ARTIST_LEN" : 13,
+  "MAX_NAME_LEN" : 39,
+  "ARTIST_COLOR": "#96d1fc",
+  "TITLE_COLOR": "ffffff"
+}
+```
+
+1. Basic frontend settings
+
+   - The max artist length is the max length of an artist's name that is displayed.
+   - The max name length is the max length of a song's name that is displayed.
+   - The artist color is the color of the artist's name that is displayed.
+   - The title color is the color of the song's name that is displayed.
+   - Note that the colors **must be in hexadecimal**.
+
+2. Images to display when nothing is being played
+   - Navigate to `./static/default_covers`
+   - Here you will find some default images I have thrown in, delete them and put in your own images that you want to display when there is nothing being played.
 
 <a name="todo"></a>
+
 ### TODO
 
 - [ ] Customisability for how overlay looks
