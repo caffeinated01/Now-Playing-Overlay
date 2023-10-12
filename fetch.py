@@ -18,8 +18,10 @@ MAX_ARTIST_LEN = CONFIG['MAX_ARTIST_LEN']
 # Get max length of an song name to display from .env file.
 MAX_NAME_LEN =  CONFIG['MAX_NAME_LEN']
 
+# Get all frontend configs
 ARTIST_COLOR = CONFIG["ARTIST_COLOR"]
 TITLE_COLOR = CONFIG["TITLE_COLOR"]
+BACKGROUND_COLOR = CONFIG["BACKGROUND_COLOR"]
 
 # Initialise oauth
 oauth = spotipy.SpotifyOAuth(client_id=ID,
@@ -67,6 +69,7 @@ def fetch():
 def return_frontend_config():
     frontend_config = {
         "artist_color": ARTIST_COLOR,
-        "title_color": TITLE_COLOR
+        "title_color": TITLE_COLOR,
+        "background_color": BACKGROUND_COLOR
     }
     return frontend_config

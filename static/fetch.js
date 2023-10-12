@@ -4,6 +4,7 @@ $(document).ready(function () {
       $("#cover").attr("src", data.cover);
       $("#artist-text").css("color", data.artist_color);
       $("#title-text").css("color", data.title_color);
+      $("#box").css("background-color", data.background_color);
     });
   });
   function getData() {
