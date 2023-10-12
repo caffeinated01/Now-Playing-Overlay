@@ -86,5 +86,4 @@ The configuration file is located at the root directory, named `config.json`. Op
 
 ### TODO
 
-- [ ] Customisability for how overlay looks
-- [ ] Customisability for backend
+nothing atm
