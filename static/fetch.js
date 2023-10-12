@@ -1,9 +1,9 @@
-const INTERVAL = 5; // In seconds
-
 $(document).ready(function () {
-  $(function getCover() {
-    $.getJSON("/ajax/covers", function (data) {
+  $(function getBase() {
+    $.getJSON("/ajax/onload", function (data) {
       $("#cover").attr("src", data.cover);
+      $("#artist-text").css("color", data.artist_color);
+      $("#title-text").css("color", data.title_color);
     });
   });
   function getData() {
@@ -15,5 +15,5 @@ $(document).ready(function () {
   }
   setInterval(function () {
     getData();
-  }, INTERVAL * 1000); // Interval between check
+  }, 5 * 1000); // Interval between check
 });

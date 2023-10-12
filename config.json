@@ -1,0 +1,6 @@
+{
+  "MAX_ARTIST_LEN" : 13,
+  "MAX_NAME_LEN" : 39,
+  "ARTIST_COLOR": "#96d1fc",
+  "TITLE_COLOR": "ffffff"
+}

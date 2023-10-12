@@ -1,7 +1,7 @@
 import spotipy
 import os
 from dotenv import load_dotenv
-from time import sleep
+import json
 
 load_dotenv()
 
@@ -10,10 +10,16 @@ ID = os.getenv("ID") # Get spotify app id from .env file
 SECRET = os.getenv("SECRET") # Get spotify app secret from .env file
 REDIRECT = os.getenv("REDIRECT") # Get spotify app redirect url from .env file
 SCOPE = "user-read-currently-playing" # Initialise scope
-# Get max length of an artist name to display from .env file. If it doesn't exist then defaults to 13 characters
-MAX_ARTIST_LEN = int(os.getenv("MAX_ARTIST_LEN")) if os.getenv("MAX_ARTIST_LEN") and os.getenv("MAX_ARTIST_LEN") != "" else 39
-# Get max length of an song name to display from .env file. If it doesn't exist then defaults to 39 characters
-MAX_NAME_LEN = int(os.getenv("MAX_NAME_LEN")) if os.getenv("MAX_NAME_LEN") and os.getenv("MAX_NAME_LEN") != "" else 39
+
+c = open('config.json')
+CONFIG = json.load(c)
+# Get max length of an artist name to display from .env file.
+MAX_ARTIST_LEN = CONFIG['MAX_ARTIST_LEN']
+# Get max length of an song name to display from .env file.
+MAX_NAME_LEN =  CONFIG['MAX_NAME_LEN']
+
+ARTIST_COLOR = CONFIG["ARTIST_COLOR"]
+TITLE_COLOR = CONFIG["TITLE_COLOR"]
 
 # Initialise oauth
 oauth = spotipy.SpotifyOAuth(client_id=ID,
@@ -46,7 +52,7 @@ def fetch():
             "id": song_id,
             "name": song_name,
             "cover": song_cover,
-            "artists": artist_names
+            "artists": artist_names,
         }
     # If not, return default set of values
     else:
@@ -54,6 +60,13 @@ def fetch():
             "id": None,
             "name": "Not playing",
             "cover": None,
-            "artists": "Not playing"
+            "artists": "Not playing",
         }
     return current_details
+
+def return_frontend_config():
+    frontend_config = {
+        "artist_color": ARTIST_COLOR,
+        "title_color": TITLE_COLOR
+    }
+    return frontend_config

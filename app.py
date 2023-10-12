@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify
-from fetch import fetch
+from fetch import fetch, return_frontend_config
 from os import listdir
 from random import choice
 
@@ -26,16 +26,20 @@ def return_data():
     # Get song details
     song_id = current_details["id"]
     song_name = current_details["name"]
-    song_cover = current_details["cover"]
+    song_cover = current_details["cover"] if song_id != None else choice(default_covers)
     song_artists = current_details["artists"]
+
   except:
     song_id, song_name, song_cover, song_artists = None, "Wait a moment...", choice(default_covers), "Wait a moment..."
   return jsonify(song_id=song_id,song_name=song_name,song_cover=song_cover,song_artists=song_artists)
 
-@app.route('/ajax/covers')
-def return_cover():
+@app.route('/ajax/onload')
+def on_load():
+  frontend_config = return_frontend_config()
+  artist_color = frontend_config["artist_color"]
+  title_color = frontend_config["title_color"]
   cover = choice(default_covers)
-  return jsonify(cover=cover)
+  return jsonify(cover=cover,artist_color=artist_color,title_color=title_color)
 
 if __name__ == '__main__':
   app.run()

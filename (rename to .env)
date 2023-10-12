@@ -1,0 +1,3 @@
+ID = '' # Spotify app id
+SECRET = '' # Spotify app secret
+REDIRECT = "https://google.com" # Spotify app redirect url
