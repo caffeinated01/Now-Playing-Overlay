@@ -26,7 +26,7 @@ A small project that displays song currently playing
 3. Click on 'Code' and download the zip file (of course unzip it).
    You could also use git, run `git clone "https://github.com/caffeinated01/Now-Playing-Overlay"`.
    ![Step 3](assets/3.png)
-4. Right click on the folder, then press 'Open in Terminal' then run `pip install -r requirements.txt` also, rename the template file to '.env' and replace the ID and secret values from earlier.
+4. Right click on the folder, then press 'Open in Terminal' then run `pip install -r requirements.txt` and `mv "(rename to .env)" .env`. Then open up the file (which is .env) and replace the Client ID and Client secret values from earlier.
    ![Step 4](assets/4.png)
 5. Run the code - in the terminal, run `python app.py` then CTRL+CLICK on the link (http://127.0.0.1:5000 in the case of the screenshot).
    ![Step 5](assets/5.png)
