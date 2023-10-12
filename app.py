@@ -39,8 +39,9 @@ def on_load():
   artist_color = frontend_config["artist_color"]
   title_color = frontend_config["title_color"]
   background_color = frontend_config["background_color"]
+  width = frontend_config["width"]
   cover = choice(default_covers)
-  return jsonify(artist_color=artist_color,title_color=title_color,background_color=background_color,cover=cover)
+  return jsonify(artist_color=artist_color,title_color=title_color,background_color=background_color,width=width,cover=cover)
 
 if __name__ == '__main__':
   app.run()

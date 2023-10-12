@@ -22,6 +22,7 @@ MAX_NAME_LEN =  CONFIG['MAX_NAME_LEN']
 ARTIST_COLOR = CONFIG["ARTIST_COLOR"]
 TITLE_COLOR = CONFIG["TITLE_COLOR"]
 BACKGROUND_COLOR = CONFIG["BACKGROUND_COLOR"]
+WIDTH = CONFIG["WIDTH"]
 
 # Initialise oauth
 oauth = spotipy.SpotifyOAuth(client_id=ID,
@@ -70,6 +71,7 @@ def return_frontend_config():
     frontend_config = {
         "artist_color": ARTIST_COLOR,
         "title_color": TITLE_COLOR,
-        "background_color": BACKGROUND_COLOR
+        "background_color": BACKGROUND_COLOR,
+        "width": WIDTH
     }
     return frontend_config
