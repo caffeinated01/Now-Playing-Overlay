@@ -50,7 +50,7 @@ python app.py
 
 Then CTRL+CLICK on the link (http://127.0.0.1:5000 in the case of the screenshot).
 ![Step 5](assets/5.png) 6. Add a 'Browser Source'
-Click 'Add a new source instead', and 'Add Source'. Under URL, enter the link from the previous step. Under 'Width' and 'Height' enter 800 and 150 respectively.
+Click 'Add a new source instead', and 'Add Source'. Under URL, enter the link from the previous step. Under 'Width' and 'Height' enter 800 and 150 respectively. Whenever you restart the app, go into the settings of browser source and refresh cache.
 ![Step 6](assets/6.png)
 
 7. All set! When you want to stop the program, go back to terminal and press CTRL+C. Note that the overlay only works when you are running it in the terminal.
