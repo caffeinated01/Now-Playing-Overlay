@@ -6,6 +6,7 @@ $(document).ready(function () {
       $("#title-text").css("color", data.title_color);
       $("#box").css("background-color", data.background_color);
       $("#box").css("min-width", data.width);
+      $("#box").css("flex-direction", data.flip);
     });
   });
   function getData() {

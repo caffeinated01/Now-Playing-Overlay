@@ -40,8 +40,9 @@ def on_load():
   title_color = frontend_config["title_color"]
   background_color = frontend_config["background_color"]
   width = frontend_config["width"]
+  flip = "row-reverse" if frontend_config["flip"] else "row"
   cover = choice(default_covers)
-  return jsonify(artist_color=artist_color,title_color=title_color,background_color=background_color,width=width,cover=cover)
+  return jsonify(artist_color=artist_color,title_color=title_color,background_color=background_color,width=width,flip=flip,cover=cover)
 
 if __name__ == '__main__':
   app.run()

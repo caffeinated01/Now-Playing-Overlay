@@ -68,20 +68,27 @@ The configuration file is located at the root directory, named `config.json`. Op
   "ARTIST_COLOR": "#96d1fc",
   "TITLE_COLOR": "#ffffff",
   "BACKGROUND_COLOR": "#131313",
-  "WIDTH": 800
+  "WIDTH": 800,
+  "FLIP": true
 }
 ```
 
 1. Basic frontend settings
 
-   - The max artist length is the max length of an artist's name that is displayed.
-   - The max name length is the max length of a song's name that is displayed.
-   - The artist color is the color of the artist's name that is displayed.
-   - The title color is the color of the song's name that is displayed.
-     - Note that the colors **must be in hexadecimal**.
-   - The background color is the color of the overlay background displayed
-   - The width is the width of the overlay displayed
-     - Note that the width you enter in the config must correspond with the width for your browser source in streamlabs/obs
+   a. The 'max artist length' property is the max length of an artist's name that is displayed.
+   b. The 'max name length' proprety is the max length of a song's name that is displayed.
+   c. The 'artist color' property is the color of the artist's name that is displayed.
+   d. The 'title color' property is the color of the song's name that is displayed.
+
+      - Note that the colors **must be in hexadecimal**.
+
+   e. The 'background color' property is the color of the overlay background displayed
+   f. The 'width' property is the width of the overlay displayed
+
+      - Note that the width you enter in the config must correspond with the width for your browser source in streamlabs/obs
+
+   g. The 'flip' property is the orientation of the overlay.
+      - Values can only be true (flip around) or false (don't flip around)
 
 2. Images to display when nothing is being played
    - Navigate to `./static/default_covers`

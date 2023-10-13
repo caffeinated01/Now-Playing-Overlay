@@ -23,6 +23,7 @@ ARTIST_COLOR = CONFIG["ARTIST_COLOR"]
 TITLE_COLOR = CONFIG["TITLE_COLOR"]
 BACKGROUND_COLOR = CONFIG["BACKGROUND_COLOR"]
 WIDTH = CONFIG["WIDTH"]
+FLIP = CONFIG["FLIP"]
 
 # Initialise oauth
 oauth = spotipy.SpotifyOAuth(client_id=ID,
@@ -72,6 +73,7 @@ def return_frontend_config():
         "artist_color": ARTIST_COLOR,
         "title_color": TITLE_COLOR,
         "background_color": BACKGROUND_COLOR,
-        "width": WIDTH
+        "width": WIDTH,
+        "flip": FLIP
     }
     return frontend_config

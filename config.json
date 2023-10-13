@@ -4,5 +4,6 @@
   "ARTIST_COLOR": "#96d1fc",
   "TITLE_COLOR": "#ffffff",
   "BACKGROUND_COLOR": "#131313",
-  "WIDTH": 800
+  "WIDTH": 800,
+  "FLIP": true
 }
