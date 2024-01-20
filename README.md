@@ -1,4 +1,4 @@
-## [WIP] Spotify Now-Playing Stream Overlay
+## Spotify Now-Playing Stream Overlay
 
 ### Table of contents
 
