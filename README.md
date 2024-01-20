@@ -42,15 +42,21 @@ A small project that displays song currently playing
    ```
    Then open up the file (which is .env) and replace the Client ID and Client secret values from earlier.
    ![Step 4](assets/4.png)
-5. Run the code - in the terminal, run
+5. For first time running, run 
+   ```
+   python setup.py
+   ```
+   It should open a browser. Copy the link in the search bar, then paste it in your terminal, where you ran the command. It will generate a cached token.
+   
+   Run the code - in the terminal, run
 
-```
-python app.py
-```
+   ```
+   python app.py
+   ```
 
-Then CTRL+CLICK on the link (http://127.0.0.1:5000 in the case of the screenshot).
-![Step 5](assets/5.png) 6. Add a 'Browser Source'
-Click 'Add a new source instead', and 'Add Source'. Under URL, enter the link from the previous step. Under 'Width' and 'Height' enter 800 and 150 respectively. Whenever you restart the app, go into the settings of browser source and refresh cache.
+   Then CTRL+CLICK on the link (http://127.0.0.1:5000 in the case of the screenshot).
+   ![Step 5](assets/5.png) 6. Add a 'Browser Source'
+   Click 'Add a new source instead', and 'Add Source'. Under URL, enter the link from the previous step. Under 'Width' and 'Height' enter 800 and 150 respectively. Whenever you restart the app, go into the settings of browser source and refresh cache.
 ![Step 6](assets/6.png)
 
 7. All set! When you want to stop the program, go back to terminal and press CTRL+C. Note that the overlay only works when you are running it in the terminal.
